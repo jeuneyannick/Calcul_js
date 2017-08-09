@@ -1,0 +1,301 @@
+string
+var str = "ma chaine de caractères" + "deuxième partie";
+
+number
+float(nombre à virgule 3.890789798797)
+int(nombre entier 25)
+
+boolean
+(true ou false) // jamais utiliser 0 et 1.
+
+deux types de listes en javascript
+
+array
+tableau de données.
+liste de données de même nature.
+
+object
+liste de propriétés
+var myArr=["pomme", "banane","figue"]
+
+
+ var myObject= {
+      "nom": "Bley",
+      "prenom":"Anthony"
+      "age":25
+
+
+ };
+ alert(myArr[1]); // > renvoie "banane
+ myArr.length // > nombred d'éléménts dans le tableau
+
+ myObject.Prenom // > renvoie la valeur de la propriété prénom de l'object my Object
+ myObject["prenom"]// idem
+
+
+
+
+
+ Opérateurs
+
+ + - * / %
+
+ 2 + 5 // > renvoie 7
+ 2 - 5 // >renvoie -3
+ 2 * 5 // renvoie 10
+ 2 / 5// renvoie 0.4
+ 2 % 5// renvoie 2
+
+
+fonctions
+déclaration d'une fonction.
+2 versions.
+
+La première en utilisant le mot function
+function myFunction (){
+
+}
+Entre parenthèse on peut donner plusieurs arguments.
+Dans les incollades, on retrouve toutes les instructions qui vont être utilisés dans la fonction
+les arguments vont être utilisés comme des variables, valables que dans la fonction au moment où elle est executé.
+arguments= valeurs
+// appel à la fonction.
+exemple myFonction (2,56).
+
+var myFunction = function (myArg1, myArg2) {}
+
+Return : c'est une instruction qui va définir la valeur de retour de la fonction
+
+Exemple: function retourning (){
+
+return"bonjour";
+}
+pour réutiliser ce qui va nous être retourné on peut la (la fonction) stocker dans une variable
+// var myVar = retourning () !! les parenthèses permettent de l'executer.
+
+
+
+
+function calculate (value1, value2) {
+        return value1 + value2;
+}
+result1 = calculate(1,7)
+result2= calculate (13,7)
+
+alert(result1)
+
+
+
+
+
+CONDITIONS
+
+
+if (conditions) {
+    //instructions
+}
+
+if (conditions) {
+  // instructions
+} else {
+     // instructions éxécutées si les conditions ne sont pas respectées
+}
+
+pour vérifier plusieurs cas possibles
+if (conditions) {
+    // instructions
+} else if(conditions2) {
+   // instructions si les conditions ne sont pas respectées et que les conditions sont respectées
+}
+
+[les conditions reverront toujours un booléen. Pour que la condition soit valable, il faut qu'elle soit true]
+[else if sont deux mots séparées, dans d'autres langages, il faut absolument l'attacher]
+[le else exclut les cas, soit un cas soit l'autre ]
+
+Opérateurs de comparaisons
+< > inférieur ou supérieur
+<=, >= inférieur ou égal, supérieur ou égal
+0< 21 // renvoie true
+0< 0 // renvoie false
+0> -7 // renvoie true
+0 > 21// renvoie false
+0 > 0 // renvoie false
+0<= 0 // renvoie true
+0>= 0 // renvoie true
+
+
+Opérateurs d'égalité
+==  (pour vérifier que deux valeurs sont égales)
+1==1 // renvoie true
+1==0 // renvoie false
+1== "1"// renvoie true
+=== (égalité stricte)
+1===1 // renvoie true
+1==="1" // renvoie false
+1.0 === 1 // renvoie false
+
+[égalité entre deux objets renverra souvent false car les deux entités sont toujours différents]
+[on utilise dans les exemples des valeurs mais on peut très bien aussi utiliser des vairables]
+
+Opérateurs d'inégalité
+!= l'inverse; le contraire de
+1 != 1 // renvoie false
+1 != 0 // renvoie true
+1 != "1"// renvoie true ( ne vérifie que la valeur)
+
+!==(inégalité stricte)
+1 !== 1 // renvoie false
+1 !== "1"// renvoie true
+1 !== 1.0 // renvoie false
+
+Pour vérifier le type de données que l'on a dans une variable on utilise
+typeof 1 // renvoie number
+typeof "bonjour"// renvoie "string"
+typeof myVar // renvoie normalement undefined (la variable myVar est vide ou non définie)
+__________________________________________________________________________________________
+
+Opérateurs logiques
+les opérateurs qui vont nous permettre de combiener plusieurs conditions au sein d'une meme condition if
+
+&& = vérifie deux conditions
+if (condition1 && condition2) {
+     // instructions exécutées si les deux conditions renvoient true
+}
+||
+if (condition1 || condition2){
+   // instructions executées si au moins une des deux conditions renvoient true
+}
+
+si on combine les deux
+
+if ((condition1 || condition2) && (condition3 || condition4)) {
+   // si condition1 et/ou condition2 envoie true ET condition3 et/ou condition4 renvoient true
+
+}
+
+!
+if(!condition) {
+   // s'éxécute si condition est false
+}
+if (condition == false) {}
+if (condition != true) {}
+
+if (!(condition1 || condition2)){
+    // si aucune des conditions n'est true
+}
+
+si l'utilisateur a tapé "bonjour" > affichez une popup "bienvenue"
+si l'utilisateur a tapé des chiffres > afficher une popup "chiffre"
+si l'utilisateur a tapé autre chose > affichez une popup "erreur"
+___________________________________________________________________________________
+
+Incrémentation
+
+var i = 0;
+
+i = i + 1; i = 1
+i += 1; // i = 2
+i++; i= 3 ( utilisé souvent pour les compteurs)
+i +=2; i=5
+
+i= i - 1; // 4
+i -= 1; // 3
+i--;// 2
+
+i*=2; // 4
+i/=2; // 2
+
+i%=2;// 0
+
+l'incrémentation et décrémentation importants pour les boucles
+boucles = blocs de code répétés un certain nombre de fois.
+
+Boucles
+var j = 0 ;
+
+while(j < 10){ // tant que j est inférieur à 10
+     j++; // j'incrémente j de 1
+}
+[faire attention que la boucle soit fausse à un moment donné]
+
+Boucle for [avantage qui a l'avantage de ne pas avoir besoin de compteur externe]
+for(i=0; i<10; i++){
+
+}
+[ces deux boucles sont le plus souvent]
+Boucle ForIn qui sert à parcourir un tableau ou un objet
+
+
+var myArr = ["chat", "chien", "loutre", "poney"];
+for(item in myArr) {// pour chaque entrée dans le tableau; cela s'affichera
+    alert (myArr[item]);
+}
+
+var MyObject = {"nom" : "Bley", "prenom": "Yannick"};
+for (property in myObject) { // pour chaque propriété de l'objet
+    alert(property); // affiche le nom de la propriété
+    alert(myObject [property]); // affiche la valeur de la propriété
+}
+
+de 0 à 50
+si le compteur est un multiple de 3, l'afficher dans la console
+
+
+
+for (i = 0; i < myArr.length; i++) { // pour chaque entrée dans le
+  tableau  myArr
+          alert(myArr[i])
+
+}
+
+Autre type de conditions.
+
+
+
+Le switch
+switch [vérifie toujours une égalité !]
+var word = "pomme";
+switch (word) { // on teste la valeur de word
+        case "banane" : // if (word== "banane")
+        break;
+
+        case "pomme" : // else if (word == "pomme")
+
+        break;
+
+        default : // cas par défaut (else)
+        break;
+
+}
+conditions pour utiliser un switch : qu'on connaisse les valeurs possibles  de notre variable, et si on veut vérifier juste une égalité.
+
+
+
+
+
+// Portée (scope) des variables / fonctions
+
+// scope : window
+
+var myVar; // variable globale : accessible dans toute la page
+
+function myFunc (arguments) { // fonction globale
+       var var2; // variable locale : accessible uniquement dans la fonction
+       var3; // variable globale;
+}
+arg est un argument, il va se comporter comme une variable mais uniquement dans la fonction.
+On ne pourra pas l'appeler une fois que la fonction est terminée
+*****************************************************************************************************
+
+var myString = "test"
+
+function myFunc (myString) {
+       alert (myString);
+}
+myFunc ("pomme"); // alert "pomme"
+function func2 () {
+        var myString = "retest"
+
+[pour utiliser la variable globale] alert(window.myString); // correspond à la variable globale
+        alert(myString); // correspond à la variable locale ("retest")
+}

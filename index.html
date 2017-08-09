@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul Javascript</title>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <h1>Calcul</h1>
+
+    <form id="my-form">
+        <label for="number-1">Nombre1</label>
+        <input type="text" name="number-1" id="number-1"/>
+        +
+        <label for="number-2">Nombre2</label>
+        <input type="text" name="number-2" id="number-2"/>
+
+        <input type="submit" value="="/> <!--pas besoin de mettre de name à l'input type submit-->
+        <input type="text" readonly="readonly" id="result-field"/>
+    </form>
+
+    <!--script à la fin de body pour ne pas bloquer le chargement et attendre que le DOM soit crée-->
+     <!--script type="text/javascript" src="js/main.js"></script-->
+</body>
+</html>
