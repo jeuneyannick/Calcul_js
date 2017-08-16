@@ -1,9 +1,12 @@
-#div{
-    position : absolute;
-    width: 56px;
-    height:50px;
-    background: red;
-}
-form{
-    margin-left: 70px;
+@charset "UTF-8";
+
+
+
+#block {
+    width:101px;
+    height:101px;
+    background:#F60;
+    position: absolute;
+    top: 100px;
+    left:100px;
 }
