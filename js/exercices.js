@@ -21,25 +21,26 @@ window.onload = function (){
             timer = setInterval(function () {
                 var blockPosY = block.offsetTop; // position verticale actuelle du block
                 var blockPosX = block.offsetLeft;// position horizontale actuelle du block
-                if (topValue > blockPosY) {//si la destination est supérieure à l'origine
+           if (topValue > blockPosY) {//si la destination est supérieure à l'origine
                     block.style.left = blockPosY + 1 + "px"
                 } else if (leftValue < blockPosY) {
                        block.style.left = blockPosY - 1 +"px"
                 }
-            }, 50);
+            }
+
             if (topValue > blockPosX) {//si la destination est supérieure à l'origine
                 block.style.left = blockPosX + 1 + "px"
             } else if (leftValue < blockPosX) {
                    block.style.left = blockPosX - 1 +"px"
             }
-      }, 50);
+
 
             //block.style.top = topValue+"px";
             //block.style.left = topValue+"px";
         }
 
 
-    }
+    }, 50);
 
     myForm.addEventListener("submit",move);
 }

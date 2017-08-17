@@ -299,3 +299,4 @@ function func2 () {
 [pour utiliser la variable globale] alert(window.myString); // correspond à la variable globale
         alert(myString); // correspond à la variable locale ("retest")
 }
+------------------------------------------------------------------------------------------------------------------------------------
